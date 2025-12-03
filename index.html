@@ -14,8 +14,6 @@
     --input-border:#d6dae2;
     --accent:#4c7cf3;
     --result-bg:#eef2ff;
-    --ad-bg:#e7e7e7;
-    --ad-border:#b0b0b0;
     --bar-red:#e74c3c;
     --bar-yellow:#f1c40f;
     --bar-green:#2ecc71;
@@ -30,8 +28,6 @@
     --input-border:#3a3f47;
     --accent:#4c7cf3;
     --result-bg:#1b2430;
-    --ad-bg:#1e2a36;
-    --ad-border:#3a4a57;
   }
 
   *{box-sizing:border-box;margin:0;padding:0}
@@ -54,7 +50,6 @@
     position:relative;
   }
 
-  /* small floating toggle button */
   #themeToggle{
     position:absolute;
     top:14px;
@@ -80,8 +75,8 @@
 
   label{display:block;margin-top:10px;font-weight:600;color:var(--muted)}
   input[type=number]{
-    width:100%;padding:12px;border-radius:12px;border:2px solid var(--input-border);
-    margin-top:6px;background:var(--input-bg);font-size:15px;color:var(--text);
+    width:100%;padding:12px;border-radius:12px;border:2px solid #d6dae2;
+    margin-top:6px;background:#fafafa;font-size:15px;color:var(--text);
   }
   input[type=number]:focus{outline:none;box-shadow:0 0 6px rgba(76,124,243,.25);border-color:var(--accent);background:var(--card)}
 
@@ -96,7 +91,6 @@
     border-left:4px solid var(--accent);min-height:48px;color:var(--text);
   }
 
-  /* progress bar */
   .progress-wrap{margin-top:12px}
   .progress-track{
     width:100%;height:14px;background:#dfe3ef;border-radius:999px;overflow:hidden;
@@ -113,11 +107,6 @@
     border-radius:10px;
     overflow:hidden;
   }
-
-  @media(max-width:360px){
-    .container{padding:16px;border-radius:12px}
-    h2{font-size:20px}
-  }
 </style>
 
 <!-- Google AdSense script -->
@@ -129,7 +118,6 @@
 
 <div class="container">
 
-  <!-- Theme toggle -->
   <button id="themeToggle" aria-pressed="false">☀️</button>
 
   <h2>Attendance Calculator</h2>
@@ -157,6 +145,8 @@
 
   <!-- Google AdSense Ad -->
   <div class="ad-box">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1089509587902763"
+     crossorigin="anonymous"></script>
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-1089509587902763"
